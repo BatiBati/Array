@@ -1,91 +1,91 @@
 // /////////////////////////////////////////// 1) Array exercises
 // // 1) Make an array of numbers that are doubles of the first array
-// function doubleNumbers(arr) {
-//   //   1.
-//   let newArray = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     newArray.push(arr[i] * 2);
-//   }
-//   return newArray;
-// }
-// console.log(doubleNumbers([2, 5, 100])); // [4, 10, 200]
-// //2.
-// function doubleNumbers(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     arr[i] *= 2;
-//   }
-//   return arr;
-// }
-// console.log(doubleNumbers([2, 5, 100]));
+function doubleNumbers(arr) {
+  //   1.
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArray.push(arr[i] * 2);
+  }
+  return newArray;
+}
+console.log(doubleNumbers([2, 5, 100])); // [4, 10, 200]
+//2.
+function doubleNumbers(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] *= 2;
+  }
+  return arr;
+}
+console.log(doubleNumbers([2, 5, 100]));
 // /////////////////////////////////////////// 2) Take an array of numbers and make them strings
-// function stringItUp(arr1) {
-//   let arr2 = arr1.toString();
+function stringItUp(arr1) {
+  let arr2 = arr1.toString();
 
-//   return arr2;
-// }
+  return arr2;
+}
 
-// console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
+console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
 
 // ///////////////////////////////////////////// 3) Capitalize each of an array of names
-// function capitalizeNames(names) {
-//   for (i = 0; i < names.length; i++) {
-//     names[i] = names[i][0].toUpperCase() + names[i].slice(1).toLowerCase();
-//   }
+function capitalizeNames(names) {
+  for (i = 0; i < names.length; i++) {
+    names[i] = names[i][0].toUpperCase() + names[i].slice(1).toLowerCase();
+  }
 
-//   return names;
-// }
+  return names;
+}
 
-// console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // ["John", "Jacob", "Jingleheimer", "Schmidt"]
+console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // ["John", "Jacob", "Jingleheimer", "Schmidt"]
 
 // ///////////////////////////////////////////// 4) Make an array of strings of the names
-// function namesOnly(arr) {
-//   let namesArray = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     namesArray.push(arr[i].name);
-//   }
-//   return namesArray;
-// }
+function namesOnly(arr) {
+  let namesArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    namesArray.push(arr[i].name);
+  }
+  return namesArray;
+}
 
-// console.log(
-//   namesOnly([
-//     { name: "Angelina Jolie", age: 80 },
-//     { name: "Eric Jones", age: 2 },
-//     { name: "Paris Hilton", age: 5 },
-//     { name: "Kayne West", age: 16 },
-//     { name: "Bob Ziroll", age: 100 },
-//   ])
-// );
+console.log(
+  namesOnly([
+    { name: "Angelina Jolie", age: 80 },
+    { name: "Eric Jones", age: 2 },
+    { name: "Paris Hilton", age: 5 },
+    { name: "Kayne West", age: 16 },
+    { name: "Bob Ziroll", age: 100 },
+  ])
+);
 
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"];
 
 // /////////////////////////////////////////////// let exampleArray = []  /////////////////////////////////////////////
 // /////////////////////////////////////////////// exampleArray.push(4)   /////////////////////////////////////////////
 // ////////////////////// 5) Make an array of strings of the names saying whether or not they can go to The Matrix
-// function makeStrings(arr) {
-//   // let ages = arr.map((age)=>age.age)
-//   let stringArrrr = [];
-//   for (i = 0; i < arr.length; i++) {
-//     if (arr[i].age >= 18) {
-//       //   console.log(arr[i].name + `Can go to Matrix`);
-//       stringArrrr.push(arr[i].name + ` can go to Matrix`);
-//     } else {
-//       //   console.log(arr[i].name + `under age`);
-//       stringArrrr.push(arr[i].name + ` is under age`);
-//     }
-//   }
-//   //   console.log(stringArrrr[i]);
-//   return stringArrrr;
-// }
+function makeStrings(arr) {
+  // let ages = arr.map((age)=>age.age)
+  let stringArrrr = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i].age >= 18) {
+      //   console.log(arr[i].name + `Can go to Matrix`);
+      stringArrrr.push(arr[i].name + ` can go to Matrix`);
+    } else {
+      //   console.log(arr[i].name + `under age`);
+      stringArrrr.push(arr[i].name + ` is under age`);
+    }
+  }
+  //   console.log(stringArrrr[i]);
+  return stringArrrr;
+}
 
-// console.log(
-//   makeStrings([
-//     { name: "Angelina Jolie", age: 80 },
-//     { name: "Eric Jones", age: 2 },
-//     { name: "Paris Hilton", age: 5 },
-//     { name: "Kayne West", age: 16 },
-//     { name: "Bob Ziroll", age: 100 },
-//   ])
-// );
+console.log(
+  makeStrings([
+    { name: "Angelina Jolie", age: 80 },
+    { name: "Eric Jones", age: 2 },
+    { name: "Paris Hilton", age: 5 },
+    { name: "Kayne West", age: 16 },
+    { name: "Bob Ziroll", age: 100 },
+  ])
+);
 // /* [
 //   "Angelina Jolie can go to The Matrix",
 //   "Eric Jones is under age!!",
@@ -102,14 +102,14 @@
 //     doubleValues([5,1,2,3,10]) // [10,2,4,6,20]
 
 // */
-// function doubleValues(arr) {
-//   let multiplySum = [];
-//   for (i = 0; i < arr.length; i++) {
-//     multiplySum.push(arr[i] * 2);
-//   }
-//   return multiplySum;
-// }
-// console.log(doubleValues([1, 2, 3]));
+function doubleValues(arr) {
+  let multiplySum = [];
+  for (i = 0; i < arr.length; i++) {
+    multiplySum.push(arr[i] * 2);
+  }
+  return multiplySum;
+}
+console.log(doubleValues([1, 2, 3]));
 
 // /*
 
@@ -120,18 +120,17 @@
 //     onlyEvenValues([5,1,2,3,10]) // [2,10]
 
 // */
-// function onlyEvenValues(arr) {
-//   let evenSum = [];
-//   for (i = 0; i < arr.length; i++) {
-//     if (arr[i] % 2 == 0) {
-//       evenSum.push(arr[i]);
-//     }
-//   }
+function onlyEvenValues(arr) {
+  let evenSum = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+      evenSum.push(arr[i]);
+    }
+  }
 
-//   return evenSum;
-// }
-
-// console.log(onlyEvenValues([1, 2, 3, 4, 5, 7, 8, 9, 10, 11]));
+  return evenSum;
+}
+console.log(onlyEvenValues([1, 2, 3, 4, 5, 7, 8, 9, 10, 11]));
 
 // // console.log(filteredNumbers);
 
@@ -146,12 +145,12 @@
 // // numbers.shift();
 // // console.log(`shifted array ${numbers}`);
 
-// // numbers.unshift(1234123);
-// // console.log(`Unshifted array ${numbers}`);
+// numbers.unshift(1234123);
+// console.log(`Unshifted array ${numbers}`);
 
-// // const string = "string";
-// // console.log(string.split(""));
-// // const arrayOfStings = string.split("");
+// const string = "string";
+// console.log(string.split(""));
+// const arrayOfStrings = string.split("");
 
 const originalFlavors = [
   "Banana Nut Fudge",
@@ -198,15 +197,15 @@ const originalFlavors = [
 
 // i.e. is31Flavors(originalFlavors) will return TRUE.*/
 
-// function checkLength(flavors) {
-//   if (flavors.length == 31) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
+function checkLength(flavors) {
+  if (flavors.length == 31) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-// console.log(checkLength(originalFlavors));
+console.log(checkLength(originalFlavors));
 
 // /* Task 2: Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor.
 
@@ -221,12 +220,12 @@ const originalFlavors = [
 
 // // function addFlavor(array, flavor) {}
 
-// function addFlavor(flavors) {
-//   let flavors1 = "Rainbow Sherbert";
-//   flavors.unshift(flavors1);
-//   return flavors;
-// }
-// console.log(addFlavor(originalFlavors));
+function addFlavor(flavor) {
+  let flavors1 = "Rainbow Sherbert";
+  flavor.unshift(flavors1);
+  return flavor;
+}
+console.log(addFlavor(originalFlavors));
 
 // /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array.
 
@@ -237,11 +236,11 @@ const originalFlavors = [
 // Your function should remove a flavor from the end of the array and console.log the resulting array.
 
 // For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/
-// function removeLastFlavor(remove) {
-//   remove.pop();
-//   return remove;
-// }
-// console.log(removeLastFlavor(originalFlavors));
+function removeLastFlavor(remove) {
+  remove.pop();
+  return remove;
+}
+console.log(removeLastFlavor(originalFlavors));
 
 // /* Task 4: Write a function that returns a flavor at a given index in the array.
 
@@ -251,10 +250,10 @@ const originalFlavors = [
 // (2) an index
 
 // For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully. */
-// function getFlavorByIndex(choose) {
-//   return choose[1];
-// }
-// console.log(getFlavorByIndex(originalFlavors));
+function getFlavorByIndex(choose) {
+  return choose[29];
+}
+console.log(getFlavorByIndex(originalFlavors));
 
 /* Task 5: As corporate wants to add more and more flavors to their lineup, 
    they've realized that they need to remove flavors based on flavor name, 
@@ -283,21 +282,21 @@ function removeFlavorByName(remover) {
 }
 console.log(removeFlavorByName(originalFlavors));
 
-// let new = remover.splice(index, index +1)
-// return remover;
-
-// 1
-//let  new push
-
-// splice (start, hed shirheg ym hasah)
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors. 
 Write a function called copy that makes a copy of the array.
  
 Your function should accept:
  
-2 arguments 1 for your new array and one for your original array
- 
-and should return a new array that is identical to the old array. You can name the new array however you'd like. */
+ 2 arguments 1 for your new array and one for your original array and should return a new array that is identical to the old array. 
+ You can name the new array however you'd like. */
+// function calledCopy(myArray, originalFlavors) {
+//   let myArray = [];
+//   myArray = originalFlavors[]
+
+//   return myArray;
+// }
+
+// console.log(calledCopy(myArray));
 
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
 Write a function that checks every item in the array for a given string and returns a new array called filteredArray with just these values. 
@@ -317,17 +316,16 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
  
 hint - you can use the .includes method to help you solve this */
 
-// function filterByWord(array, word) {
-//   const filteredArray = [];
-//   array.forEach(function (flavor) {
-//     if (flavor.includes(word)) {
-//       console.log(flavor);
-//     }
-//   });
-//   //   return filteredArray;
-// }
-
-// console.log(filterByWord(originalFlavors, "chocolate"));
+function filterByWord(array, word) {
+  const filteredArray = [];
+  array.forEach(function (flavor) {
+    if (flavor.includes(word)) {
+      console.log(flavor);
+    }
+  });
+  return filteredArray;
+}
+console.log(filterByWord(originalFlavors, "chocolate"));
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/
 
 /* STRETCH 1: Write a function that returns the average number of words in an array. You should be able to use this function for any array, but can test with originalFlavors.
