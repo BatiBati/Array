@@ -1,6 +1,6 @@
 // /////////////////////////////////////////// 1) Array exercises
 // // 1) Make an array of numbers that are doubles of the first array
-function doubleNumbers(arr) {
+/* function doubleNumbers(arr) {
   //   1.
   let newArray = [];
   for (let i = 0; i < arr.length; i++) {
@@ -269,18 +269,18 @@ For example, removeFlavorByName(originalFlavors, "Vanilla") would return an arra
  
 Hint: You can use .splice() for this
  */
-function removeFlavorByName(remover) {
-  let removeName = "Strawberry";
-  let index = 0;
-  for (let i = 0; i < remover.length; i++) {
-    if (remover[i] == removeName) {
-      index = i;
-    }
-  }
-  remover.splice(index, 1);
-  return remover;
-}
-console.log(removeFlavorByName(originalFlavors));
+// function removeFlavorByName(remover) {
+//   let removeName = "Strawberry";
+//   let index = 0;
+//   for (let i = 0; i < remover.length; i++) {
+//     if (remover[i] == removeName) {
+//       index = i;
+//     }
+//   }
+//   remover.splice(index, 1);
+//   return remover;
+// }
+// console.log(removeFlavorByName(originalFlavors));
 
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors. 
 Write a function called copy that makes a copy of the array.
@@ -289,14 +289,14 @@ Your function should accept:
  
  2 arguments 1 for your new array and one for your original array and should return a new array that is identical to the old array. 
  You can name the new array however you'd like. */
-// function calledCopy(myArray, originalFlavors) {
-//   let myArray = [];
-//   myArray = originalFlavors[]
-
-//   return myArray;
-// }
-
-// console.log(calledCopy(myArray));
+const copyArray = [];
+function calledCopy(arr1, arr2) {
+  // for (let i = 0; i < arr1.length; i++){
+  //   arr2[i] = arr1[i];
+  // }
+  return arr2;
+}
+console.log(calledCopy(copyArray, originalFlavors));
 
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
 Write a function that checks every item in the array for a given string and returns a new array called filteredArray with just these values. 
@@ -315,8 +315,29 @@ For example, filterByWord(originalFlavors, "Chocolate") should return ["Chocolat
 DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
  
 hint - you can use the .includes method to help you solve this */
+function filterByWord(anArray, word) {
+  for (let i = 0; i < anArray.length; i++) {
+    if (anArray[i] == word) {
+    }
+    return anArray;
+  }
 
-function filterByWord(array, word) {
+  // const filterFunction = (cur) => {
+  //   return cur.includes(word);
+  // };
+  // // "Raindow .." => filterFunction("Raindow ..")
+  // // "Banana Nut Fudge" => filterFunction("Banana Nut Fudge")
+  // // ...
+
+  // const filteredArray = anArray.filter(filterFunction);
+
+  // return filteredArray;
+}
+// const value = (originalFlavors, "Lemon");
+
+console.log(filterByWord(originalFlavors, "Lemon"));
+
+/* function filterByWord(array, chosenWord) {
   const filteredArray = [];
   array.forEach(function (flavor) {
     if (flavor.includes(word)) {
@@ -325,7 +346,7 @@ function filterByWord(array, word) {
   });
   return filteredArray;
 }
-console.log(filterByWord(originalFlavors, "chocolate"));
+console.log(filterByWord(originalFlavors, "chocolate")); */
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/
 
 /* STRETCH 1: Write a function that returns the average number of words in an array. You should be able to use this function for any array, but can test with originalFlavors.
@@ -351,3 +372,30 @@ For example, getAverageWordLength(originalFlavors) should return a number betwee
 // sum(1, 2);
 // sum(2, 29);
 // sum(100, 90);
+
+// const customFilter = (array, callback) => {
+//   let newArray = [];
+
+//   for (let i = 0; i < array.length; i++) {
+//     const dgsiuadhisau = callback(array[i]);
+
+//     if (dgsiuadhisau === true) {
+//       newArray.push(array[i]);
+//     }
+//   }
+
+//   return newArray;
+// };
+
+// console.log(customFilter([1, 2, 6, 3, 12, 6, 43], (cur) => cur % 2 !== 0));
+
+// 1. Variables / let, const, var
+// 2. Data type / string, number, boolean, null , undefined
+// 3. If / Condition  > , < , ===, ==, &&, ||
+// 4. Loop / for
+// 5. Function / arrow , traditional
+// 6. Array & Object
+// 7. Array & Object methods / length, map, filter, splice
+
+
+
