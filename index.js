@@ -102,14 +102,14 @@ console.log(
 //     doubleValues([5,1,2,3,10]) // [10,2,4,6,20]
 
 // */
-function doubleValues(arr) {
-  let multiplySum = [];
-  for (i = 0; i < arr.length; i++) {
-    multiplySum.push(arr[i] * 2);
-  }
-  return multiplySum;
-}
-console.log(doubleValues([1, 2, 3]));
+// function doubleValues(arr) {
+//   let multiplySum = [];
+//   for (i = 0; i < arr.length; i++) {
+//     multiplySum.push(arr[i] * 2);
+//   }
+//   return multiplySum;
+// }
+// console.log(doubleValues([1, 2, 3]));
 
 // /*
 
@@ -120,17 +120,17 @@ console.log(doubleValues([1, 2, 3]));
 //     onlyEvenValues([5,1,2,3,10]) // [2,10]
 
 // */
-function onlyEvenValues(arr) {
-  let evenSum = [];
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 == 0) {
-      evenSum.push(arr[i]);
-    }
-  }
+// function onlyEvenValues(arr) {
+//   let evenSum = [];
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 == 0) {
+//       evenSum.push(arr[i]);
+//     }
+//   }
 
-  return evenSum;
-}
-console.log(onlyEvenValues([1, 2, 3, 4, 5, 7, 8, 9, 10, 11]));
+//   return evenSum;
+// }
+// console.log(onlyEvenValues([1, 2, 3, 4, 5, 7, 8, 9, 10, 11]));
 
 // // console.log(filteredNumbers);
 
@@ -152,39 +152,39 @@ console.log(onlyEvenValues([1, 2, 3, 4, 5, 7, 8, 9, 10, 11]));
 // console.log(string.split(""));
 // const arrayOfStrings = string.split("");
 
-const originalFlavors = [
-  "Banana Nut Fudge",
-  "Black Walnut",
-  "Burgundy Cherry",
-  "Butterscotch Ribbon",
-  "Cherry Macaron",
-  "Chocolate",
-  "Chocolate Almond",
-  "Chocolate Chip",
-  "Chocolate Fudge",
-  "Chocolate Mint",
-  "Chocolate Ribbon",
-  "Coffee",
-  "Coffee Candy",
-  "Date Nut",
-  "Eggnog",
-  "French Vanilla",
-  "Green Mint Stick",
-  "Lemon Crisp",
-  "Lemon Custard",
-  "Lemon Sherbet",
-  "Maple Nut",
-  "Orange Sherbet",
-  "Peach",
-  "Peppermint Fudge Ribbon",
-  "Peppermint Stick",
-  "Pineapple Sherbet",
-  "Raspberry Sherbet",
-  "Rocky Road",
-  "Strawberry",
-  "Vanilla",
-  "Vanilla Burnt Almond",
-];
+// const originalFlavors = [
+//   "Banana Nut Fudge",
+//   "Black Walnut",
+//   "Burgundy Cherry",
+//   "Butterscotch Ribbon",
+//   "Cherry Macaron",
+//   "Chocolate",
+//   "Chocolate Almond",
+//   "Chocolate Chip",
+//   "Chocolate Fudge",
+//   "Chocolate Mint",
+//   "Chocolate Ribbon",
+//   "Coffee",
+//   "Coffee Candy",
+//   "Date Nut",
+//   "Eggnog",
+//   "French Vanilla",
+//   "Green Mint Stick",
+//   "Lemon Crisp",
+//   "Lemon Custard",
+//   "Lemon Sherbet",
+//   "Maple Nut",
+//   "Orange Sherbet",
+//   "Peach",
+//   "Peppermint Fudge Ribbon",
+//   "Peppermint Stick",
+//   "Pineapple Sherbet",
+//   "Raspberry Sherbet",
+//   "Rocky Road",
+//   "Strawberry",
+//   "Vanilla",
+//   "Vanilla Burnt Almond",
+// ];
 
 // // Task 1: Confirm that the array is exactly 31 flavors. Your function should accept:
 
@@ -197,15 +197,15 @@ const originalFlavors = [
 
 // i.e. is31Flavors(originalFlavors) will return TRUE.*/
 
-function checkLength(flavors) {
-  if (flavors.length == 31) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function checkLength(flavors) {
+//   if (flavors.length == 31) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-console.log(checkLength(originalFlavors));
+// console.log(checkLength(originalFlavors));
 
 // /* Task 2: Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor.
 
@@ -220,12 +220,12 @@ console.log(checkLength(originalFlavors));
 
 // // function addFlavor(array, flavor) {}
 
-function addFlavor(flavor) {
-  let flavors1 = "Rainbow Sherbert";
-  flavor.unshift(flavors1);
-  return flavor;
-}
-console.log(addFlavor(originalFlavors));
+// function addFlavor(flavor) {
+//   let flavors1 = "Rainbow Sherbert";
+//   flavor.unshift(flavors1);
+//   return flavor;
+// }
+// console.log(addFlavor(originalFlavors));
 
 // /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array.
 
@@ -236,11 +236,11 @@ console.log(addFlavor(originalFlavors));
 // Your function should remove a flavor from the end of the array and console.log the resulting array.
 
 // For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/
-function removeLastFlavor(remove) {
-  remove.pop();
-  return remove;
-}
-console.log(removeLastFlavor(originalFlavors));
+// function removeLastFlavor(remove) {
+//   remove.pop();
+//   return remove;
+// }
+// console.log(removeLastFlavor(originalFlavors));
 
 // /* Task 4: Write a function that returns a flavor at a given index in the array.
 
@@ -250,10 +250,10 @@ console.log(removeLastFlavor(originalFlavors));
 // (2) an index
 
 // For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully. */
-function getFlavorByIndex(choose) {
-  return choose[29];
-}
-console.log(getFlavorByIndex(originalFlavors));
+// function getFlavorByIndex(choose) {
+//   return choose[29];
+// }
+// console.log(getFlavorByIndex(originalFlavors));
 
 /* Task 5: As corporate wants to add more and more flavors to their lineup, 
    they've realized that they need to remove flavors based on flavor name, 
@@ -289,14 +289,14 @@ Your function should accept:
  
  2 arguments 1 for your new array and one for your original array and should return a new array that is identical to the old array. 
  You can name the new array however you'd like. */
-const copyArray = [];
-function calledCopy(arr1, arr2) {
-  // for (let i = 0; i < arr1.length; i++){
-  //   arr2[i] = arr1[i];
-  // }
-  return arr2;
-}
-console.log(calledCopy(copyArray, originalFlavors));
+// const copyArray = [];
+// function calledCopy(arr1, arr2) {
+//   // for (let i = 0; i < arr1.length; i++){
+//   //   arr2[i] = arr1[i];
+//   // }
+//   return arr2;
+// }
+// console.log(calledCopy(copyArray, originalFlavors));
 
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
 Write a function that checks every item in the array for a given string and returns a new array called filteredArray with just these values. 
@@ -315,12 +315,12 @@ For example, filterByWord(originalFlavors, "Chocolate") should return ["Chocolat
 DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
  
 hint - you can use the .includes method to help you solve this */
-function filterByWord(anArray, word) {
-  for (let i = 0; i < anArray.length; i++) {
-    if (anArray[i] == word) {
-    }
-    return anArray;
-  }
+// function filterByWord(anArray, word) {
+//   for (let i = 0; i < anArray.length; i++) {
+//     if (anArray[i] == word) {
+//     }
+//     return anArray;
+//   }
 
   // const filterFunction = (cur) => {
   //   return cur.includes(word);
@@ -329,13 +329,13 @@ function filterByWord(anArray, word) {
   // // "Banana Nut Fudge" => filterFunction("Banana Nut Fudge")
   // // ...
 
-  // const filteredArray = anArray.filter(filterFunction);
+//   // const filteredArray = anArray.filter(filterFunction);
 
-  // return filteredArray;
-}
+//   // return filteredArray;
+// }
 // const value = (originalFlavors, "Lemon");
 
-console.log(filterByWord(originalFlavors, "Lemon"));
+// console.log(filterByWord(originalFlavors, "Lemon"));
 
 /* function filterByWord(array, chosenWord) {
   const filteredArray = [];
@@ -398,4 +398,12 @@ For example, getAverageWordLength(originalFlavors) should return a number betwee
 // 7. Array & Object methods / length, map, filter, splice
 
 
+
+
+
+
+for (let i = 0; i < 5; i++) {
+//  y = i
+ console.log(i);
+}
 
